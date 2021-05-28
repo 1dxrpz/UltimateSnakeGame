@@ -80,12 +80,11 @@ namespace Reigns
 			MediaPlayer.Play(bg_song);
 			base.Initialize();
 		}
+
 		protected override void LoadContent()
 		{
 			_spriteBatch = new SpriteBatch(GraphicsDevice);
-			Color[] data = new Color[1] { Color.Red };
-			texture = new Texture2D(GraphicsDevice, 1, 1);
-			texture.SetData(data);
+			
 		}
 		int mouth = 0;
 		bool mouth_open = false;
